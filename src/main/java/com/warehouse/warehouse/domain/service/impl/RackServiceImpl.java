@@ -34,4 +34,9 @@ public class RackServiceImpl implements RackService {
     public List<Rack> getAllRacks() {
         return rackRepository.findAll();
     }
+
+    @Override
+    public List<Rack> getAllRacksByWarehouse(Integer id) {
+        return rackRepository.findAllByWarehouse(id);
+    }
 }

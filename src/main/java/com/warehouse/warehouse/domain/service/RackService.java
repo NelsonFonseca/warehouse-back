@@ -11,4 +11,5 @@ public interface RackService {
     public void deleteRack(Integer id);
     public Rack getRackById(Integer id);
     public List<Rack> getAllRacks();
+    public List<Rack> getAllRacksByWarehouse(Integer id);
 }

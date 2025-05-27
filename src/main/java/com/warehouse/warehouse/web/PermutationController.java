@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/permutations")
+@CrossOrigin(origins = "*")
 public class PermutationController {
     @Autowired
     private PermutationService permutationService;

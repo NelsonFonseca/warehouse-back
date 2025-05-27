@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/racks")
+@CrossOrigin(origins = "*")
 public class RackController {
 
     @Autowired
@@ -36,6 +37,11 @@ public class RackController {
 
     @GetMapping
     public List<Rack> getAllRacks() {
+        return rackService.getAllRacks();
+    }
+
+    @GetMapping("/warehouse/{id}")
+    public List<Rack> getAllRacksByWarehouse(@PathVariable Integer id) {
         return rackService.getAllRacks();
     }
 }
