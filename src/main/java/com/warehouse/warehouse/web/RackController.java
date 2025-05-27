@@ -42,6 +42,6 @@ public class RackController {
 
     @GetMapping("/warehouse/{id}")
     public List<Rack> getAllRacksByWarehouse(@PathVariable Integer id) {
-        return rackService.getAllRacks();
+        return rackService.getAllRacksByWarehouse(id);
     }
 }

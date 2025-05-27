@@ -37,6 +37,6 @@ public class RackServiceImpl implements RackService {
 
     @Override
     public List<Rack> getAllRacksByWarehouse(Integer id) {
-        return rackRepository.findAllByWarehouse(id);
+        return rackRepository.findByWarehouseId(id);
     }
 }
